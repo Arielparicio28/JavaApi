@@ -1,41 +1,32 @@
 package com.example.camperapi.dto;
 
+import jakarta.validation.constraints.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class CamperDto {
     private Long id;
+
+    @NotBlank(message = "Invalid Name: Empty")
+    @NotNull(message = "Invalid Name: Name is NULL")
+    @Size(min = 3, max = 30, message = "Invalid Name: Must be of 3 - 30 characters")
     private String name;
-    private int age;
+
+
+    @NotNull(message = "Age field should not be null.")
+    @Min(value = 8, message = "Age should be at least 8.")
+    @Max(value = 18, message = "Age should not exceed 18.")
+    private Integer age;
+
+    @NotNull(message = "Username field should not be null.")
+    @NotBlank(message = "Username field should not be empty.")
     private String username;
 
+    @NotNull(message = "Password field should not be null.")
+    @NotBlank(message = "Password field should not be empty.")
+    @Size(min = 8, message = "Password should have at least 8 characters.")
+    private String password;
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 }

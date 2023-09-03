@@ -5,9 +5,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class SignUpDto {
+public class CamperResponseDto {
+
     private Long id;
-    private Long camperId;
-    private Long activityId;
-    private Integer time;
+    private String name;
+    private Integer age;
+
 }
