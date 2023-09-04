@@ -52,6 +52,7 @@ public class ActivityService {
         newActivity.setName(activityDto.getName());
         newActivity.setDifficulty(activityDto.getDifficulty());
         return activityRepository.save(newActivity);
+
     }
 
 
