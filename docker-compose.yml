@@ -1,0 +1,27 @@
+version: "3.9"
+
+#Un servicio para nuestro contenedor de nuestra apiRest(java_app)
+#y otro para nuestro contenedorde la base de datos(java_db)
+services:
+  java_app:
+    container_name: java_app
+    image: api-java:1.0.0
+    build: .
+    ports:
+     - 8080:8080
+    environment:
+     - DATABASE_URL:jdbc:postgresql://java_db:5433/camperDB
+     - DATABASE-USERNAME:postgres
+     - DATABASE_PASSWORD:1994
+    depends_on:
+     - java_db
+  java_db:
+    container_name: java_db
+    image: postgres:12
+    ports:
+      - 5433:5433
+    environment:
+    - POSTGRES_USER:postgres
+    - POSTGRES_PASSWORD:1994
+    - POSTGRES_DB:camperDB
+
