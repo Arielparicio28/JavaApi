@@ -8,7 +8,7 @@ services:
     image: api-java:1.0.0
     build: .
     ports:
-     - 8080:8080
+     - 8081:8081
     environment:
      - DATABASE_URL:jdbc:postgresql://java_db:5433/camperDB
      - DATABASE-USERNAME:postgres
