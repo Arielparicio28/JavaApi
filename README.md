@@ -43,6 +43,7 @@ Nota:tengan en cuenta que el editor de código utilizado para este proyecto fue 
 # Contacto
 
 autor:Ariel Aparicio Aloma
+
 email:arielaparicio100@gmail.com
 
 Si tienes alguna pregunta o inquietud, no dudes en contactarme.Muchas Gracias.
