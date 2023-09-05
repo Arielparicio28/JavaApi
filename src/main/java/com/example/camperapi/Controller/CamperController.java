@@ -31,7 +31,7 @@ public class CamperController {
         this.camperRepository = camperRepository;
     }
 
-    @PostMapping("/camper")
+    @PostMapping("/camper/post")
     public ResponseEntity<CamperResponseDto> createCamper(@Valid @RequestBody CamperDto camperCreateDTO) {
         CamperResponseDto createdCamper = camperService.createCamper(camperCreateDTO);
         return ResponseEntity.ok().body(createdCamper);
