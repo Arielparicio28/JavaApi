@@ -6,13 +6,13 @@ Este es un proyecto de backend desarrollado en Java utilizando Spring Boot. El o
 
 El proyecto sigue una estructura de carpetas organizada de la siguiente manera:
 
-controller: Contiene las clases controladoras que manejan las solicitudes HTTP y gestionan las respuestas.
+.controller: Contiene las clases controladoras que manejan las solicitudes HTTP y gestionan las respuestas.
 
-services: Contiene las clases de servicio que implementan la lógica de negocio de la aplicación.
+.services: Contiene las clases de servicio que implementan la lógica de negocio de la aplicación.
 
-entity: Contiene las clases de entidad que representan los objetos de datos del dominio.
+.entity: Contiene las clases de entidad que representan los objetos de datos del dominio.
 
-repository: Contiene las interfaces de repositorio que gestionan la interacción con la base de datos.
+.repository: Contiene las interfaces de repositorio que gestionan la interacción con la base de datos.
 
 # Requisitos
 
