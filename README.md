@@ -30,6 +30,13 @@ Asegúrate de tener Docker instalado y en funcionamiento en tu sistema.
 
 Construye la imagen Docker desde la raíz del proyecto.
 
+docker build -t tu-proyecto .
+
+
+Ejecuta el contenedor Docker.
+
+docker run -p 8080:8080 tu-proyecto
+
 # Ejecución
 
 Construye el proyecto con Maven:
@@ -42,9 +49,9 @@ Nota:tengan en cuenta que el editor de código utilizado para este proyecto fue 
 
 # Contacto
 
-autor:Ariel Aparicio Aloma
+autor: Ariel Aparicio Aloma
 
-email:arielaparicio100@gmail.com
+email: arielaparicio100@gmail.com
 
 Si tienes alguna pregunta o inquietud, no dudes en contactarme.Muchas Gracias.
 
@@ -55,10 +62,3 @@ Si tienes alguna pregunta o inquietud, no dudes en contactarme.Muchas Gracias.
 
 
 
-
-
-docker build -t tu-proyecto .
-
-Ejecuta el contenedor Docker.
-
-docker run -p 8080:8080 tu-proyecto
